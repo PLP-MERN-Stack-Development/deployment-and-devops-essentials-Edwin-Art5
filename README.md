@@ -1,77 +1,41 @@
-# Deployment and DevOps for MERN Applications
+# Royalty Studioz — Week 7: Deployment & DevOps
 
-This assignment focuses on deploying a full MERN stack application to production, implementing CI/CD pipelines, and setting up monitoring for your application.
+## What this project contains
+- A minimal MERN stack example for Week 7 assignment.
+- Backend (server/) — Express + Mongoose with a Todo CRUD API.
+- Frontend (client/) — React app with a Todo UI.
+- GitHub Actions CI workflows for backend & frontend.
 
-## Assignment Overview
+## Local setup
+1. Clone repo.
+2. Create .env files:
+   - server/.env:
+     PORT=5000
+     MONGO_URI=<your-atlas-uri>
+   - client/.env:
+     REACT_APP_API_URL=http://localhost:5000
+3. Start backend:
+   cd server && npm run dev
+4. Start frontend:
+   cd client && npm start
 
-You will:
-1. Prepare your MERN application for production deployment
-2. Deploy the backend to a cloud platform
-3. Deploy the frontend to a static hosting service
-4. Set up CI/CD pipelines with GitHub Actions
-5. Implement monitoring and maintenance strategies
+## API
+- GET /api/ping → { message: "pong" }
+- GET /api/todos → list todos
+- POST /api/todos → create { title }
+- PATCH /api/todos/:id/toggle → toggle done
+- DELETE /api/todos/:id → delete
 
-## Getting Started
+## Deployment (suggested)
+- Backend: Render / Railway / Heroku — set MONGO_URI in env on the platform.
+- Frontend: Vercel / Netlify — set REACT_APP_API_URL to your backend URL.
+- CI: GitHub Actions included.
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Follow the setup instructions in the `Week7-Assignment.md` file
-4. Use the provided templates and configuration files as a starting point
+## Submission checklist
+- [ ] Code pushed to GitHub Classroom repo (main)
+- [ ] CI workflows run & screenshot included
+- [ ] Frontend deployed (Vercel link)
+- [ ] Backend deployed (Render link)
+- [ ] README contains deployed URLs and instructions
+- [ ] Screenshots of CI pipeline and deployment logs
 
-## Files Included
-
-- `Week7-Assignment.md`: Detailed assignment instructions
-- `.github/workflows/`: GitHub Actions workflow templates
-- `deployment/`: Deployment configuration files and scripts
-- `.env.example`: Example environment variable templates
-- `monitoring/`: Monitoring configuration examples
-
-## Requirements
-
-- A completed MERN stack application from previous weeks
-- Accounts on the following services:
-  - GitHub
-  - MongoDB Atlas
-  - Render, Railway, or Heroku (for backend)
-  - Vercel, Netlify, or GitHub Pages (for frontend)
-- Basic understanding of CI/CD concepts
-
-## Deployment Platforms
-
-### Backend Deployment Options
-- **Render**: Easy to use, free tier available
-- **Railway**: Developer-friendly, generous free tier
-- **Heroku**: Well-established, extensive documentation
-
-### Frontend Deployment Options
-- **Vercel**: Optimized for React apps, easy integration
-- **Netlify**: Great for static sites, good CI/CD
-- **GitHub Pages**: Free, integrated with GitHub
-
-## CI/CD Pipeline
-
-The assignment includes templates for setting up GitHub Actions workflows:
-- `frontend-ci.yml`: Tests and builds the React application
-- `backend-ci.yml`: Tests the Express.js backend
-- `frontend-cd.yml`: Deploys the frontend to your chosen platform
-- `backend-cd.yml`: Deploys the backend to your chosen platform
-
-## Submission
-
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
-
-1. Complete all deployment tasks
-2. Set up CI/CD pipelines with GitHub Actions
-3. Deploy both frontend and backend to production
-4. Document your deployment process in the README.md
-5. Include screenshots of your CI/CD pipeline in action
-6. Add URLs to your deployed applications
-
-## Resources
-
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
-- [MongoDB Atlas Documentation](https://docs.atlas.mongodb.com/)
-- [Render Documentation](https://render.com/docs)
-- [Railway Documentation](https://docs.railway.app/)
-- [Vercel Documentation](https://vercel.com/docs)
-- [Netlify Documentation](https://docs.netlify.com/) 
