@@ -34,8 +34,7 @@
 ## Submission checklist
 - [ ] Code pushed to GitHub Classroom repo (main)
 - [ ] CI workflows run & screenshot included
-- [ ] Frontend deployed (Vercel link)
-- [ ] Backend deployed (Render link)
+- [ ] https://nimble-bonbon-da085c.netlify.app/
 - [ ] README contains deployed URLs and instructions
-- [ ] Screenshots of CI pipeline and deployment logs
+- [ ] E:\PLP\Mern-Stack\Week_7\deployment-and-devops-essentials-Edwin-Art5\Screenshot.png
 
