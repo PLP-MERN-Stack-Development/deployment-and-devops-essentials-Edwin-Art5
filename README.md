@@ -36,5 +36,5 @@
 - [ ] CI workflows run & screenshot included
 - [ ] https://nimble-bonbon-da085c.netlify.app/
 - [ ] README contains deployed URLs and instructions
-- [ ] E:\PLP\Mern-Stack\Week_7\deployment-and-devops-essentials-Edwin-Art5\Screenshot.png
+- ![alt text](Screenshot.png)
 
